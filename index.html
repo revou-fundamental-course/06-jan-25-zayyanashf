@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta chatset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AESPA Official</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -14,54 +14,101 @@
     <!-- Logo & Navigation -->
     <header class="main-header">
         <!-- Logo -->
-        <div class="logo-icon">
-
-        </div>
+        <div class="logo-icon"></div>
 
         <!-- Navigation -->
         <nav>
             <a href="#home-page" class="left-rounded">Home</a>
-            <a href="#our-profile">Our Profile</a>
-            <a href="#portofolio">Portofolio</a>
+            <a href="#our-profile">Profile</a>
+            <a href="#portfolio">Discography</a>
             <a href="#message-us" class="right-rounded">Message Us</a>
         </nav>
     </header>
 
-    <hr>
+    <hr />
 
     <!-- Main Content -->
     <main>
-        <!-- Homepage -->
+        <!-- Home Page -->
         <section>
             <!-- Title -->
-            <header id="home-page">
-                <h1>Hi <span id="user-greeting">User</span>, Welcome to our website</h1>
-                <p>Lorem ipsum dolor sit amet adipiscing...</p>
+            <header id="home-page">          
+                <h1>Hi <span id="name">User</span>, Welcome to Kwangya</h1>
+                <p>Aespa is a South Korean girl group formed by SM Entertainment. The group consists of four members: Karina, Giselle, Winter, and Ningning. The group is known for popularizing the metaverse concept and hyperpop music in K-pop.</p>
             </header>
-            
-            <div class="banner-image">
 
+            <div class="banner-image banner-image-1"></div>
+            <div class="banner-image banner-image-2"></div>
+            <div class="banner-image banner-image-3"></div>
+
+            <div class="slide-button">
+                <button onclick="nextBanner()">Next</button>
             </div>
+            
         </section>
 
-        <!-- Out Profile -->
+        <!-- Our Profile -->
         <section>
             <!-- Title -->
             <header id="our-profile">
                 <h1>Our Profile</h1>
             </header>
-            
-            <div class="content"></div>
+
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>
+                            <div id="image-karina"><img src="https://i.pinimg.com/736x/09/3f/81/093f81af92525f63df7c180305491bcb.jpg" alt="karina" height="500px"></div>
+                            <p>Karina</p>
+                        </th>
+                        <th>
+                            <div id="image-giselle"><img src="https://i.pinimg.com/736x/68/43/e9/6843e96a630df8f2a45e9a0ac6603c0b.jpg" alt="giselle" height="500px"></div>
+                            <p>Giselle</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div id="image-winter"><img src="https://i.pinimg.com/736x/de/1b/18/de1b1830db4be0f270c3e766f7ac52ee.jpg" alt="winter" height="500px"></div>
+                            <p>Winter</p>
+                        </th>
+                        <th>
+                            <div id="image ninging"><img src="https://i.pinimg.com/736x/f5/24/bd/f524bd649e3b0d2796dbf666068a76ab.jpg" alt="ningning" height="501px"></div>
+                            <p>Ningning</p>
+                        </th>
+                    </tr>
+                </table>
+            </div>
         </section>
 
-        <!-- Portofolio -->
+        <!-- Portfolio -->
         <section>
             <!-- Title -->
-            <header id="portofolio">
-                <h1>Portofolio</h1>
+            <header id="portfolio">
+                <h1>Discography</h1>
             </header>
-                    
-            <div class="content"></div>
+
+            <div class="content-porto">
+                <div class="content-porto-item">
+                    <img src="https://i.pinimg.com/736x/06/d0/46/06d046378a324938b547bc60d548a107.jpg" alt="savage" height="400px">
+                    <p><strong>Savage</strong></p>
+                    <p>Savage is the first extended play by South Korean girl group Aespa. The EP was released by SM Entertainment on October 5, 2021, and is available in three versions—P.O.S, Synk Dive and Hallucination Quest. It contains six songs, including the lead single of the same name.</p>
+                </div>
+                <div class="content-porto-item">
+                    <img src="https://i.pinimg.com/736x/12/65/be/1265be4887d0b14e6b8a1c0aee8e1f6b.jpg" alt="spicy" height="400px">
+                    <p><strong>My World</strong></p>
+                    <p>My World is the third extended play by South Korean girl group Aespa. It was released by SM Entertainment on May 8, 2023, and contains six tracks, including the pre-release single "Welcome to My World" featuring Naevis, and the lead single "Spicy" which reached the top three on the Circle Digital Chart.</p>
+                </div>
+                <div class="content-porto-item">
+                    <img src="https://i.pinimg.com/736x/5e/9e/99/5e9e9963b17918e9bb8a16dddc1fcea2.jpg" alt="drama" height="400px">
+                    <p><strong>Drama</strong></p>
+                    <p>Drama is the fourth extended play by South Korean girl group Aespa. It was released by SM Entertainment on November 10, 2023, and contains six tracks including the lead single of the same name.</p>
+                </div>
+                <div class="content-porto-item">
+                    <img src="https://i.pinimg.com/736x/49/4a/5c/494a5cdead73d9c371ce5ad6735c2c07.jpg" alt="supernova" height="400px">
+                    <p><strong>Supernova</strong></p>
+                    <p>Armageddon is the first studio album by South Korean girl group Aespa. It was released by SM Entertainment on May 27, 2024, and contains ten tracks including two singles, "Supernova" and "Armageddon".</p>
+                </div>
+            </div>
         </section>
 
         <!-- Message Us -->
@@ -70,17 +117,76 @@
             <header id="message-us">
                 <h1>Message Us</h1>
             </header>
-            
-            <div class="content"></div>
+
+            <div class="content">
+                <form id="user-form">
+                    <div class="form-group">
+                        <label for="name-input">Name </label>
+                        <div id="input-group">
+                            <input type="text" name="name" id="name-input" placeholder="Enter your name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate-input">Birthdate </label>
+                        <div id="input-group">
+                            <input type="date" name="birthdate" id="birthdate-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender-input">Gender </label>
+                        <div id="input-group">
+                            <input type="radio" id="gender-input-male" name="male" value="Male" required>  
+                            <label for="male">Male</label> 
+                            <input type="radio" id="gender-input-female" name="female" value="Female" required>  
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message-input">Pesan </label>
+                        <div id="input-group">
+                            <textarea name="message" id="message-input" placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" id="submit-btn">Submit</button> 
+                    <!-- klo pake doc di javascript onclick dihilangkan -->
+                </form>
+
+                <br>
+
+                <div class="result-form">
+                    <div class="preview-item">
+                        <label>Name : </label>
+                        <span id="result-form-name"></span>
+                      </div>
+                      <div class="preview-item">
+                        <label>Birthdate : </label>
+                        <span id="result-form-birthdate"></span>  
+                      </div>
+                      <div class="preview-item">
+                        <label>Gender : </label>
+                        <span id="result-form-gender"></span>  
+                      </div>
+                      <div class="preview-item">
+                        <label>Message : </label>
+                        <span id="result-form-message"></span>  
+                      </div>
+                </div>
+            </div>            
         </section>
     </main>
 
-    <hr>
+    <hr />
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 - All rights reserved</p>
+        <p>&copy; 06.01.2025</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
